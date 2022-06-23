@@ -1,84 +1,126 @@
-/* reset */
-body {
+/* resets */
+
+body,
+h1,
+p {
   margin: 0;
-  padding: 0;
+}
+
+body {
+  padding: 20px;
   font-family: "Open Sans", sans-serif;
 }
-header {
-  margin: 10px 0px 0px 10px;
-}
+
 h1 {
-  margin-left: 10px;
-  font-size: 12pt;
+  font-size: 16px;
 }
-ul {
+
+nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+header a {
   text-decoration: none;
   color: #69696a;
-}
-ul li {
-  margin: 10px 0px 0px 10px;
-}
-ul li a {
-  text-decoration: none;
-  color: #69696a;
-  margin-top: 15px;
+  padding: 5px 5px 5px 0;
+  display: inline-block;
 }
 
-.hireus {
-  border: 1px;
-  color: white;
+.accent {
   background-color: black;
-  border-radius: 20px;
-  text-align: center;
-  padding: 5px;
-}
-
-.hireus-link {
-  text-decoration: none;
-  color: #fff;
-}
-main h1 {
-  font-size: 20pt;
-  margin-left: 10px;
-}
-p {
-  border-left: #69696a 2px solid;
-  padding-left: 15px;
-  margin-left: 10px;
-}
-
-.calltoaction {
-  border: 1px;
   color: white;
-  background-color: black;
-  border-radius: 20px;
+  width: 100%;
   text-align: center;
-  padding: 5px;
-  font-size: 12pt;
-  margin-left: 10px;
+  border-radius: 20px;
 }
 
-.calltoaction-link {
+.call-to-action {
+  border-left: 3px solid black;
+  padding-left: 10px;
+}
+
+.call-to-action-link {
   text-decoration: none;
-  color: #fff;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 10px;
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   background-color: rgba(247, 193, 162, 0.7);
-  justify-content: space-around;
   display: flex;
-  align-items: right;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-.footerlink {
-  display: inline-block;
+footer nav ul {
+  display: flex;
 }
 
-footer ul li {
-  display: inline-block;
+footer a {
+  padding: 5px 0 5px 5px;
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (min-width: 768px) {
+  nav ul {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    padding: 20px 10px 0 0;
+  }
+
+  .chirpus-info {
+    width: 50%;
+    margin-top: 150px;
+  }
+
+  .circles {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+  }
+
+  .red-circle {
+    padding: 25px;
+    background-color: rgb(247, 136, 167, 0.6);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    opacity: 0.9;
+    position: absolute;
+    top: 220px;
+    right: 100px;
+  }
+  .purple-circle {
+    padding: 25px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(207, 130, 213, 0.6);
+    opacity: 0.9;
+    position: absolute;
+    top: 250px;
+    right: 50px;
+  }
+  .orange-circle {
+    padding: 25px;
+    background-color: rgba(247, 193, 162, 0.7);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    opacity: 0.9;
+    position: absolute;
+    top: 330px;
+    right: 50px;
+  }
 }
